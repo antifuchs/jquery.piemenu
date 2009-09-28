@@ -91,7 +91,7 @@
          if (options.className)
              canvas.className = options.className;
          if (options.elementStyle)
-             $(canvas).css(elementStyle);
+             $(canvas).css(options.elementStyle);
          $(canvas).css(
              {
                  top: position.top - radius,
