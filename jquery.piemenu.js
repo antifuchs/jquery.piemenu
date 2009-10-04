@@ -127,6 +127,7 @@
              ctx.arc(radius, radius, options.closeRadius, 0, Math.PI*2, false);
              ctx.fill();
 
+             ctx.beginPath();
              ctx.lineCap = 'round';
              ctx.strokeStyle = 'white';
              ctx.lineWidth = 4;
