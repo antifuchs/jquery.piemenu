@@ -2,16 +2,22 @@ Basic usage
 ===========
 
 Have an UL whose list items contain IMG elements with the icons you want on the menu:
-    <ul id="piemenu">
-      <li id="entry-1"><img src="icons/item1.png"></li>
-      <li id="entry-2"><img src="icons/item2.png"></li>
-      <li id="entry-3"><img src="icons/item3.png"></li>
-      <li id="entry-4"><img src="icons/item4.png"></li>
-    </ul>
+
+```
+<ul id="piemenu">
+  <li id="entry-1"><img src="icons/item1.png"></li>
+  <li id="entry-2"><img src="icons/item2.png"></li>
+  <li id="entry-3"><img src="icons/item3.png"></li>
+  <li id="entry-4"><img src="icons/item4.png"></li>
+</ul>
+```
 
 Then, when the pie menu should pop up, use:
-    $('#piemenu').pieMenu({top: 200, left: 400},
-                          {onSelection: function(selectedElt) { alert(selectedElt.attr('id'); }});
+
+```
+$('#piemenu').pieMenu({top: 200, left: 400},
+                      {onSelection: function(selectedElt) { alert(selectedElt.attr('id'); }});
+```
 
 As you might have guessed, the first object is a position spec for where the pie menu should  up: coordinates specify the center of the radial menu, so if you use the current mouse coords,
 the "close" area is placed below the pointer.
